@@ -14,7 +14,10 @@ export class ListarComponent implements OnInit {
   constructor(private service: ServiceService, private router: Router) { }
 
   ngOnInit() {
-    this.service.getPersonas();
+    this.service.getPersonas()
+      .subscribe(data => {
+        this.personas = data;
+      });
 
   }
 
