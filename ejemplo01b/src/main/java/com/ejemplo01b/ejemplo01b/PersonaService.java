@@ -7,9 +7,9 @@ public interface PersonaService {
 
   Persona listarId(int id);
 
-  Persona add(int id);
+  Persona add(Persona p);
 
-  Persona edit(int id);
+  Persona edit(Persona p);
 
   Persona delete(int id);
 }
